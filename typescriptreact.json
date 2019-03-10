@@ -21,5 +21,19 @@
 			"\nexport { $1 };"
 		],
 		"description": "React Function Component"
+	},
+	"React Class with Props": {
+		"prefix": "rcp",
+		"body": [
+			"import * as React from 'react';",
+			"\ntype Props = { $2: $3 };",
+			"\nclass $1 extends React.Component<Props>{",
+			"\tpublic render() {",
+			"\t\treturn (<>$1</>)",
+			"\t}",
+			"}",
+			"\nexport { $1 };"
+		],
+		"description": "React Function Component"
 	}
 }
